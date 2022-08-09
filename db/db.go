@@ -11,5 +11,5 @@ type Todo struct {
 type TodoStore interface {
 	Update(context.Context, Todo) error
 	LoadByUserID(context.Context, string) ([]Todo, error)
-	Delete(context.Context, string) ([]Todo, error)
+	Delete(context.Context, string) error
 }
